@@ -66,7 +66,7 @@ public class RecursionSquares extends JPanel{
 			  public void actionPerformed(ActionEvent e)
 			  {
 				  String startVal = startSize.getText();
-				  if(isInt(startVal)){
+				  if(isInt(startVal) && Integer.parseInt(startVal) > 0){
 					  RecursionSquares panel = new RecursionSquares(Integer.parseInt(startVal), 
 							  2);
 					  frame.setContentPane(panel);
